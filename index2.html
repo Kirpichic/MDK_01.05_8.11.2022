@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css" />
     <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="path/to/your/copy/of/jquery.cycle2.js"></script>
+    <script type="text/javascript" src="src/jquery-3.6.1.js"></script>
+    <script type="text/javascript" src="src/jquery.cycle2.js"></script>
 </head>
 <body>
-    <figure>
-        <div class="slideshow">
-            
+    <!--<figure>
+        <div class="slideshow" data-cycle-fx=scrollHorz data-cycle-timeout=2000 data-cycle-caption="#adv-custom-caption"
+        data-cycle-caption-template="Slide {{slideNum}}: {{cycleTitle}}">
+
+            <img src="img/1.jpg"  width="640" height="360" data-cycle-title="Anor Londo"/>
+            <img src="img/2.jpg"  width="640" height="360" data-cycle-title="wastelands"/>
+            <img src="img/3.jpg"  width="640" height="360" data-cycle-title="Anor Londo Castle"/>
+            <img src="img/4.jpg"  width="640" height="360" data-cycle-title="Boss"/>
+            <img src="img/5.jpg"  width="640" height="360" data-cycle-title="Bonfire"/>    
         </div>
-    </figure>
+        <div id="adv-custom-caption" class="center"></div>
+    </figure>-->
+
+  
+    <div class="slideshow">
+        <div class="cycle-slideshow" data-cycle-fx=scrollHorz data-cycle-timeout=2000 data-cycle-caption="#alt-caption" data-cycle-caption-template="{{alt}}">
+            <img src="img/1.jpg"  width="640" height="360" alt="Anor Londo" >
+            <img src="img/2.jpg"  width="640" height="360" alt="wastelands" >
+            <img src="img/3.jpg"  width="640" height="360" alt="Anor Londo Castle" >
+            <img src="img/4.jpg"  width="640" height="360" alt="Boss" >
+            <img src="img/5.jpg"  width="640" height="360" alt="Bonfire" >
+            </div>
+            <!-- empty element for caption -->
+            <div id="alt-caption" class="center"></div>
+    </div>
 </body>
 </html>
